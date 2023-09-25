@@ -1,0 +1,88 @@
+<mxfile host="65bd71144e">
+    <diagram id="QR-t2Y9lyq4TbIpA6WwS" name="ページ1">
+        <mxGraphModel dx="446" dy="576" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="27" value="商品を検索する" style="shape=umlFrame;whiteSpace=wrap;html=1;width=180;height=30;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="440" width="610" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="サイトを訪問する" style="shape=umlFrame;whiteSpace=wrap;html=1;width=180;height=30;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="40" width="610" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="商品検索画面" style="shape=umlBoundary;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="121" width="100" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="商品検索" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="120" width="70" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="商品情報" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="121" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="ユーザー" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="121" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="150" y="150.5" as="sourcePoint"/>
+                        <mxPoint x="80" y="150.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="340" y="160.5" as="sourcePoint"/>
+                        <mxPoint x="270" y="160.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1.023;exitY=0.52;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="3" target="4" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="340" y="421" as="sourcePoint"/>
+                        <mxPoint x="430" y="311" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" value="ユーザー" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="520" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="商品検索画面" style="shape=umlBoundary;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="520" width="100" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="商品検索" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="520" width="70" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="商品情報" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="520" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="" style="endArrow=none;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="440" y="560" as="sourcePoint"/>
+                        <mxPoint x="510" y="560" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="18" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="80" y="550" as="sourcePoint"/>
+                        <mxPoint x="150" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="270" y="550" as="sourcePoint"/>
+                        <mxPoint x="350" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="350" y="570" as="sourcePoint"/>
+                        <mxPoint x="270" y="570" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="21" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="150" y="570" as="sourcePoint"/>
+                        <mxPoint x="80" y="570" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
