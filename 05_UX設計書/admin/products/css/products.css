@@ -1,0 +1,28 @@
+.register-area {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000000ae;
+    z-index: 2;
+}
+
+.form-products-register {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-products-edit {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-products-delete {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    margin: auto;
+}
