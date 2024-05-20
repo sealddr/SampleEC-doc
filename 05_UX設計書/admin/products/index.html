@@ -30,6 +30,7 @@
         </div>        
     </header>
     
+    <!-- 商品登録モーダルダイアログ -->
     <div id="register-area" class="register-area none">
         <form class="form-products-register">
             <h1 class="text-center">商品登録</h1>
@@ -81,6 +82,113 @@
             
         </form>
     </div>    
+
+    <!-- 商品変更モーダルダイアログ -->
+    <div id="update-area" class="update-area none">
+        <form class="form-products-update">
+            <h1 class="text-center">商品変更</h1>
+            <!-- 教材名 -->
+            <div class="mb-2">
+                <label for="userId" class="form-label">教材名</label>
+                <input type="text" class="form-control" value="必勝面接"/>
+            </div>
+    
+            <!-- 説明 -->
+            <div class="mb-2">
+                <label for="userId" class="form-label">説明</label>
+                <textarea class="form-control">面接のポイントを実演を通じて説明します。
+                </textarea>
+            </div>
+    
+            <!-- 教材名 -->
+            <div class="mb-2">
+                <label for="userId" class="form-label">教材カテゴリ</label>
+                <select class="form-select">
+                    <option value="1">就職活動</option>
+                    <option value="2">資格取得</option>
+                    <option value="3">仕事術</option>
+                    <option value="4">その他</option>
+                </select>
+            </div>
+    
+            <!-- 価格 -->
+            <div class="mb-2">
+                <label for="userId" class="form-label">価格(円)</label>
+                <input type="text" class="form-control" value="100"/>
+            </div>
+    
+            <!-- サービスURL -->
+            <div class="mb-2">
+                <label for="userId" class="form-label">サービスURL</label>
+                <input type="text" class="form-control" value="jobhunting/hissyoumensetsu"/>
+            </div>
+            
+    
+            <!-- 登録ボタン -->
+            <button id="btn-update-submit" type="button" class="btn btn-primary w-100 mt-3">
+                更新
+            </button>
+    
+            <!-- 戻るボタン -->
+            <button id="btn-update-cancel" type="button" class="btn btn-secondary w-100 mt-3">
+                戻る
+            </button>
+            
+        </form>
+    </div>
+
+    <!-- 商品削除モーダルダイアログ -->
+    <div id="delete-area" class="delete-area none">
+        <form class="form-products-delete">
+            <h1 class="text-center">商品削除</h1>
+            <!-- 教材名 -->
+            <div class="mb-2">
+                <label for="userId" class="form-label">教材名</label>
+                <input type="text" class="form-control" value="必勝面接" disabled/>
+            </div>
+    
+            <!-- 説明 -->
+            <div class="mb-2">
+                <label for="userId" class="form-label">説明</label>
+                <textarea class="form-control" disabled>面接のポイントを実演を通じて説明します。
+                </textarea>
+            </div>
+    
+            <!-- 教材名 -->
+            <div class="mb-2">
+                <label for="userId" class="form-label">教材カテゴリ</label>
+                <select class="form-select" disabled>
+                    <option value="1">就職活動</option>
+                    <option value="2">資格取得</option>
+                    <option value="3">仕事術</option>
+                    <option value="4">その他</option>
+                </select>
+            </div>
+    
+            <!-- 価格 -->
+            <div class="mb-2">
+                <label for="userId" class="form-label">価格(円)</label>
+                <input type="text" class="form-control" value="100" disabled/>
+            </div>
+    
+            <!-- サービスURL -->
+            <div class="mb-2">
+                <label for="userId" class="form-label">サービスURL</label>
+                <input type="text" class="form-control" value="jobhunting/hissyoumensetsu" disabled/>
+            </div>
+            
+    
+            <!-- 登録ボタン -->
+            <button id="btn-delete-submit" type="button" class="btn btn-primary w-100 mt-3">
+                削除
+            </button>
+    
+            <!-- 戻るボタン -->
+            <button id="btn-delete-cancel" type="button" class="btn btn-secondary w-100 mt-3">
+                戻る
+            </button>
+        </form>
+    </div>
 
     <nav class="navbar navbar-expand navbar-light bg-light">
         <div class="container">
@@ -173,10 +281,14 @@
                     <td>就職活動</td>
                     <td>\100</td>
                     <td>
-                        <a href="#" class="btn btn-primary">変更</a>
+                        <button type="button" id="btn-update" class="btn btn-primary">
+                            変更
+                        </button>
                     </td>
                     <td>
-                        <a href="#" class="btn btn-secondary">削除</a>
+                        <button type="button" id="btn-delete" class="btn btn-secondary">
+                            削除
+                        </button>
                     </td>
                 </tr>
                 <tr>
@@ -185,10 +297,14 @@
                     <td>資格試験</td>
                     <td>\200</td>
                     <td>
-                        <a href="#" class="btn btn-primary">変更</a>
+                        <button type="button" id="btn-update" class="btn btn-primary" disabled>
+                            変更
+                        </button>
                     </td>
                     <td>
-                        <a href="#" class="btn btn-secondary">削除</a>
+                        <button type="button" id="btn-delete" class="btn btn-secondary" disabled>
+                            削除
+                        </button>
                     </td>
                 </tr>
                 <tr>
@@ -197,10 +313,14 @@
                     <td>仕事術</td>
                     <td>\400</td>
                     <td>
-                        <a href="#" class="btn btn-primary">変更</a>
+                        <button type="button" id="btn-update" class="btn btn-primary" disabled>
+                            変更
+                        </button>
                     </td>
                     <td>
-                        <a href="#" class="btn btn-secondary">削除</a>
+                        <button type="button" id="btn-delete" class="btn btn-secondary" disabled>
+                            削除
+                        </button>
                     </td>
                 </tr>
                 <tr>
@@ -209,10 +329,14 @@
                     <td>資格試験</td>
                     <td>\800</td>
                     <td>
-                        <a href="#" class="btn btn-primary">変更</a>
+                        <button type="button" id="btn-update" class="btn btn-primary" disabled>
+                            変更
+                        </button>
                     </td>
                     <td>
-                        <a href="#" class="btn btn-secondary">削除</a>
+                        <button type="button" id="btn-delete" class="btn btn-secondary" disabled>
+                            削除
+                        </button>
                     </td>
                 </tr>
             </tbody>
